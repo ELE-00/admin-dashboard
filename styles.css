@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+.pageContainer {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.2fr 1fr; /* sidebar, main */
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+}
+
+/* sidebar section */
+
+.sidebar {
+    display: grid;
+    background-color: rgb(32, 161, 221);
+    grid-template-rows: 0.3fr 0.8fr 1fr;
+    
+}
+
+/* .sidebar > div {
+    border: 2px solid blue;
+} */
+
+.titleSection {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 50px;
+    align-items: center;
+    margin-top: 6%;
+    margin-left: 10%;
+    gap: 5%;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.titleSection svg {
+    height: 70px;
+    width: 70px;
+    fill: white;
+}
+
+
+
+.sidebarSection1 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(5, 40px);
+    align-items: center;
+    margin-left: 10%;
+    gap: 5%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+
+svg {
+    height: 30px;
+    width: 30px;
+    fill: white;
+}
+
+
+.sidebarSection2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(5, 40px);
+    align-items: center;
+    margin-left: 10%;
+    gap: 5%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+/* header section */
+.header {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
+
+    
+}
+
+/* main content section */
+.content{
+    background-color: rgb(236, 236, 236);
+}
