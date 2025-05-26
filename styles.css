@@ -9,12 +9,13 @@ body {
 .pageContainer {
     display: grid;
     height: 100vh;
+    width: auto;
     grid-template-columns: 0.2fr 1fr; /* sidebar, main */
 }
 
 .mainContainer {
     display: grid;
-    grid-template-rows: 0.3fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
 }
 
 /* sidebar section */
@@ -54,7 +55,7 @@ body {
 .sidebarSection1 {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: repeat(5, 40px);
+    grid-template-rows: repeat(6, 40px);
     align-items: center;
     margin-left: 10%;
     gap: 5%;
@@ -90,11 +91,288 @@ svg {
     position: relative;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
+}
 
+/* top header section */
+.topheadersection{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    margin-top: 10px;
+    align-items: center;
+}
+
+
+
+.topheadersection svg {
+    height: 30px;
+    width: 30px;
+    fill: black;
+}
+
+.sidebarsection {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-left: 5%;
     
 }
+
+
+.searchbar {
+    background-color: rgb(230, 230, 230);
+    height: 30px;
+    width: auto;
+    border-radius: 50px;
+    margin-left: 2%;
+}
+
+
+.profilesection {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20%;
+}
+
+
+.topheadersection > div {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.profilesection > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+}
+
+
+
+/* bottom header section */
+
+.bottomheadersection{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+
+}
+
+
+#profileicon2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 15%;
+
+}
+
+
+.titlesection {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 3%;
+}
+.headertext {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.profilename2 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.btncontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 13%;
+
+
+}
+
+.btncontainer button {
+    background-color: rgb(32, 161, 221);
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: 1px  rgb(32, 161, 221);
+    color: white;
+    font-size: 16px;
+}
+
 
 /* main content section */
 .content{
     background-color: rgb(236, 236, 236);
+    /* border: 2px solid red; */
 }
+
+
+.contentGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    margin: 20px;
+    gap: 30px;
+    /* border: 2px solid rgb(0, 255, 85);   */
+}
+
+.projectsContainer{
+    grid-template-rows: auto 1fr;
+}
+
+
+.projectsGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    /* border: 2px solid blue; */
+}
+
+
+.projectCard{
+    display: grid;
+    grid-template-columns: 0.02fr 1fr;
+    background-color: white;
+    height: 250px;
+    width: 450px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
+    overflow: hidden; /* <-- This is crucial! */
+}
+
+.cardAccent{
+    background-color: rgb(255, 166, 0);
+    height: 100%
+}
+
+.cardContent{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.4fr;
+}
+
+.cardContent h3 {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+
+}
+
+.cardContent p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 10px;
+    color:rgb(128, 128, 128);
+
+
+}
+.cardLinks {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+
+}
+
+.cardLinks svg {
+    height: 25px;
+    width: 25px;
+    fill: black;
+    margin-right: 40px;
+}
+
+
+.infoContainer{
+    /* border: 2px solid rgb(255, 3, 234); */
+}
+
+
+
+.annCard{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: white;
+    height: 400px;
+    width: 325px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
+    overflow: hidden; 
+    justify-content: center;
+}
+
+.annContent{
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.annSection > h4 {
+    margin-bottom: 0px;
+} 
+.annSection > p {
+    margin-top: 0px;
+    font-size: 14px;
+    color:rgb(128, 128, 128);
+} 
+
+.separator {
+  background-color: #ccc;
+  width: 100%;
+  height: 1px;
+}
+
+
+.trendCard{
+    background-color: white;
+    height: 343px;
+    width: 325px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
+    overflow: hidden; 
+    justify-content: center;
+}
+
+.trendcontainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 30px;
+}
+
+.trendUser{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.trendUser > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.userText > h4 {
+    margin-bottom: 0px;
+} 
+
+.userText > p {
+    margin-top: 0px;
+    font-size: 14px;
+    color:rgb(128, 128, 128);
+} 
